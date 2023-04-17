@@ -24,7 +24,7 @@
     
 }
 
-/* Declarações retrato */
+/* Declarações retrato */       
 @media screen and (orientation:portrait) {
     body {
         background-image: url(../imagens/cev-portrait.jpg);
