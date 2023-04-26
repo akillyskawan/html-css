@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 783px) and (max-width:1000px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width:1000px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+</head>
+<body>
+    <!-- <div id="fundo"> Tirei a div da cor de fundo para ver se teria alguma mudança na no aumento da altura da janela do navegador -->
+        <div id="tela">
+            <div id="img">
+
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="cadastro.php" method="post">
+
+                    <div class="input">
+                        <span class="material-symbols-outlined" id="icon-person">person</span>
+                        <input type="email" name="email" id="iemail" placeholder="seu e-mail" required size="19" maxlength="30"></div>
+
+                    <div class="input">
+                        <span class="material-symbols-outlined" id="icon-key">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required size="19" min-length="8" maxlength="20"></div>
+                    <input type="submit" value="Entrar" id="form-entrar">
+                </form>
+                <a href="#" id="recuperar">Esqueci a senha</a>
+            </div>
+        </div>
+    <!-- </div> -->
+</body>
+</html>
