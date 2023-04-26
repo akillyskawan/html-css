@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/*Estilo para  desktop*/
+
+body {
+    background-image: linear-gradient(to bottom, #5F2C82, #53AAA7 );
+}
+
+
+div#tela {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 350px;
+}
+
+div#img {
+    width: 450px;
+    height: 350px;
+    float: right;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+}
+
+div#formulario {
+    float: left;
+    width: 450px;
+    height: 350px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+}
+
+div#formulario > h1 {
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+div#formulario > p {
+    font-size: .9em;
+    padding-bottom: 15px;
+}
+
+div.input {
+    width: calc(100% - 20px);
+}
+
+input#form-entrar {
+    width: calc(100% - 20px);
+}
+
+a#recuperar {
+    width: calc(100% - 20px);
+}
+
+div.input > input#iemail {
+    width: calc(100% - 53px);
+}
+
+div.input > input#isenha {
+    width: calc(100% - 53px);
+}
