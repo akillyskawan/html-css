@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* Configuração Mobile First */
+
+
+/* Typical Devices Breakpoints
+
+Mobile: 360 x 720.
+
+Tablet: 768 x 1024.
+Laptop: 1366 x 768.
+High-res laptop or desktop: 1920 x 1080.
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: #5F2C82;
+    --cor2: #94CFCD;
+    --cor3: #6CD3CF;
+    --cor4: #53AAA7;
+    --cor5: #2D6462;
+    --open:'Open Sans';
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+div#img {
+    position: relative;
+    width: 260px;
+    height: 210px;
+    border-top-right-radius: 20px;
+    border-top-left-radius:20px;
+    background: white url(../imagens/metal.jpg) left bottom no-repeat;
+    background-size: cover;
+}
+
+div#tela {
+    position: absolute;
+    margin: auto;
+    width: 260px; /*width anterior 260px*/
+    height: 540px; /*height 540px anteriormente*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 2px -2px 6px 0px rgba(0, 0, 0, 0.185);
+    overflow: hidden;
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
+}
+
+div#formulario {
+    width: 260px;
+    height: 330px; /*modificado*/
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: 1.5em;
+    font-size: var(--open);
+}
+
+div#formulario > p {
+    font-size: .8em;
+    padding-left: 9px;
+    padding-right: 9px;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    font-family: var(--open);
+}
+
+div.input {
+    margin: auto;
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    background-color:var(--cor1);
+    margin-bottom: 10px;
+    margin-bottom: 7px;
+}
+
+span#icon-person {
+    position: absolute;
+    color: white;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+div.input > input#iemail {
+    /* width: 77%; */
+    height: 39px;
+    margin-left: 45px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3px;
+    background-color: var(--cor2); 
+    padding-left: 5px;
+    font-size: 1em;
+    font-family: var(--open);
+}
+
+div.input > input#iemail:focus {
+    background-color: white;
+}
+
+span#icon-key {
+    position: absolute;
+    color: white;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+div.input > input#isenha {
+    /* width: 77%; */
+    height: 39px;
+    margin-left: 45px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3px;
+    background-color: var(--cor2);
+    padding-left: 5px;
+    font-size: 1em;
+    font-family: var(--open);
+}
+
+div.input > input#isenha:focus {
+    background-color: white;
+}
+
+input#form-entrar {
+    width: 90%;
+    height: 45px;
+    background-color: var(--cor2);
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    color: white;
+    background-color: var(--cor4);
+    margin-bottom: 7px;
+    font-family: var(--open);
+    font-size: 1em;
+}
+
+input#form-entrar:hover {
+    background-color: var(--cor5);
+}
+
+a#recuperar {
+    width: 90%;
+    padding: 10px;
+    background-color: white;
+    margin: auto;
+    border: 1px solid var(--cor4);
+    border-radius: 5px;
+    display: block;
+    color: var(--cor5);
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    box-sizing: border-box;
+    font-family: var(--open);
+}
+
+a#recuperar:hover {
+    background-color: var(--cor3);
+}
