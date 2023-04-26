@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*Estilo para Tablets*/
+
+:root {
+    --cor1: #5F2C82;
+    --cor2: #94CFCD;
+    --cor3: #6CD3CF;
+    --cor4: #53AAA7;
+    --cor5: #2D6462;
+    --open:'Open Sans';
+}
+
+
+body {
+    background-image: linear-gradient(to bottom, #5F2C82, #53AAA7 );
+}
+
+div#tela {
+    width: calc(90% - 10px);
+    height: 300px;  
+    box-shadow: none; 
+}
+
+div#img {
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+}
+
+div#formulario {
+    width: 74%;
+    height: 300px;
+    position: absolute;
+    display: inline-block;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+}
+
+div.input > input#iemail {
+    width: calc(100% - 55px);
+}
+
+div.input > input#isenha {
+    width: calc(100% - 55px);
+}
